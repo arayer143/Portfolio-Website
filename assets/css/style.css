@@ -278,22 +278,22 @@ header .navbar ul li a:hover {
 .social-icons a:focus,
 .social-icons a:hover {
   color: #fff;
-  background-color: #0685da;
+  background-color: #00aced;
 }
 .social-icons a.github:hover {
-  background-color: #007bb6;
+  background-color: #00aced;
 }
 .social-icons a.twitter:hover {
   background-color: #00aced;
 }
 .social-icons a.linkedin:hover {
-  background-color: #007bb6;
+  background-color: #00aced;
 }
 .social-icons a.dev:hover {
-  background-color: #007bb6;
+  background-color: #00aced;
 }
 .social-icons a.instagram:hover {
-  background-color: #007bb6;
+  background-color: #00aced;
 }
 /* social icons end */
 
@@ -410,7 +410,8 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #1a047e;
+  background: #00aced;
+
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
