@@ -2,10 +2,10 @@ $(document).ready(function () {
 
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
+        $('.navbar').toggleClass('nav-click');
     });
 
-    $(window).on('scroll load', function () {
+    $(window).on('load', function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
@@ -81,7 +81,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Web Design (HTML, CSS, JS)", "C++", ".NET", "android development", "web development"],
+    strings: ["HTML", "CSS", "JS", "WordPress","WebFlow", "Domain Hosting","C++", ".NET", "Python", "JavaScript", "MYSQL", "GitHub", "GIT", "XAMMP", "Apache"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
