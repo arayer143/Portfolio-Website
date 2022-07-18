@@ -145,9 +145,9 @@ header .navbar ul li a:hover {
   #menu {
     display: block;
   }
-  
+
   header .navbar {
-    position: fixed;
+    position: center;
     top: 6.5rem;
     right: -120%;
     width: 75%;
@@ -174,7 +174,7 @@ header .navbar ul li a:hover {
 
 
   header .navbar ul li a {
-    display: block;
+    display: center;
     padding: 1rem;
     text-align: left;
     color: lightblue;
@@ -430,6 +430,10 @@ header .navbar ul li a:hover {
 .resumebtn .btn:hover i {
   transform: translateX(5px);
 }
+
+
+
+
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
   .about .row .image {
@@ -1211,6 +1215,10 @@ input {
 }
 /* footer section ends */
 
+
+
+
+
 /* common media queries starts*/
 @media (max-width: 450px) {
   html {
@@ -1224,6 +1232,10 @@ input {
   }
 }
 /* common media queries ends*/
+
+
+
+
 
 /* scroll top starts */
 #scroll-top {
