@@ -59,7 +59,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
 section {
@@ -188,7 +188,7 @@ header .navbar ul li a:hover {
 
 
 
-/* hero section starts*/
+/* Home section starts*/
 .home {
   position: relative;
   display: flex;
@@ -353,12 +353,9 @@ header .navbar ul li a:hover {
   transition: 0.3s;
   cursor: pointer;
 }
-.about .row .image img:hover {
-  mix-blend-mode: normal;
-}
 .about .row .content {
   flex: 1 1 45rem;
-  padding: 3rem;
+  padding: 2rem;
 }
 .about .row .content h3 {
   color: rgb(27, 27, 27);
@@ -425,11 +422,11 @@ header .navbar ul li a:hover {
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
   .about .row .image {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .about .row .image img {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     mix-blend-mode: normal;
   }
   .about .row {
@@ -468,7 +465,7 @@ header .navbar ul li a:hover {
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
-  width: 90%;
+  width: 70%;
   margin: auto;
   margin-top: 2rem;
 }
