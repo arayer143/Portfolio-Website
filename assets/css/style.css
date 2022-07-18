@@ -331,7 +331,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: rgb(255, 255, 255);
+  background: #e5ecfb;
 }
 .about .row {
   display: flex;
@@ -350,7 +350,6 @@ header .navbar ul li a:hover {
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -454,7 +453,7 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: linear-gradient(to bottom, #57059e, #00002c);
 }
 .skills h2 {
   color: #fff;
@@ -761,9 +760,9 @@ input {
 /* education section ends */
 
 /* work section starts */
+
 .work {
-  /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+   background: linear-gradient(to bottom, #57059e, #00002c);
 }
 .work h2 {
   color: #fff;
@@ -880,7 +879,16 @@ input {
 }
 /* work section ends */
 
+
+
+
+
+
 /* experience section starts */
+
+.experience{
+  background: #e5ecfb;
+}
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -903,6 +911,9 @@ input {
   background-color: inherit;
   width: 50%;
 }
+
+
+
 /*circles on timeline*/
 .experience .container::after {
   content: "\f0b1";
@@ -910,7 +921,7 @@ input {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: rgb(255, 255, 255);
+  background-color: e5ecfb;
   border: 4px solid #ff9f55;
   top: 15px;
   border-radius: 50%;
@@ -927,6 +938,9 @@ input {
 .experience .right {
   left: 50%;
 }
+
+
+
 /* arrows pointing right */
 .experience .left::before {
   content: " ";
@@ -940,6 +954,11 @@ input {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #f68c09;
 }
+
+
+
+
+
 /* arrows pointing left  */
 .experience .right::before {
   content: " ";
@@ -977,6 +996,12 @@ input {
 .experience .content .desc p {
   font-size: 1.2rem;
 }
+
+
+
+
+
+
 /* view all button */
 .morebtn {
   display: flex;
@@ -1009,6 +1034,10 @@ input {
 .morebtn .btn:hover i {
   transform: translateX(5px);
 }
+
+
+
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -1061,43 +1090,52 @@ input {
 
 /* contact section starts */
 
+.contact{
+  background: linear-gradient(to bottom, #57059e, #00002c);
+}
 
-.button-area {
+.contact h2 {
+  color: #fff;
+  padding: 1rem;
+}
+.contact .heading span {
+  color: rgb(255, 230, 0);
+}
+.contact .button-area {
   margin-top: 6rem;
   
-  
 }
 
-.button-area button {
-  padding: 1rem;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 13px 25px;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
-  transition: 0.3s ease;
-  font-family: "Nunito", sans-serif;
+.contactbtn {
+  margin-top: 6rem;
 }
-.button-area button:hover {
-  background: #421cecf5;
-}
-.button-area span {
-  font-size: 17px;
-  padding: 1rem;
-  display: center;
-}
-.button-area button i {
-  position: center;
-  top: 6px;
-  left: 2px;
-  font-size: 1.5rem;
+.contactbtn .btn {
+  padding: 1.7rem 3rem;
+  border-radius: 0.5em;
   transition: 0.3s;
   color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
 }
+.contactbtn .btn span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.contactbtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.contactbtn .btn:hover {
+  background: #00aced;
+
+}
+.contactbtn .btn:hover i {
+  transform: translateX(5px);
+}
+
 
 
 
