@@ -235,7 +235,7 @@ header .navbar ul li a:hover {
   font-size: 2.5rem;
   color: blue;
   font-weight: 600;
-  padding: 1rem 0;
+  padding: 0;
 }
 
 
@@ -296,6 +296,11 @@ header .navbar ul li a:hover {
   background-color: #007bb6;
 }
 /* social icons end */
+
+
+
+
+
 
 /* hero media queries starts*/
 @media (max-width: 450px) {
