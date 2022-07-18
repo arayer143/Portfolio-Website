@@ -1108,6 +1108,8 @@ input {
 
 .contactbtn {
   margin-top: 6rem;
+  box-shadow: whitesmoke;
+  outline: #00aced;
 }
 .contactbtn .btn {
   padding: 1.7rem 3rem;
@@ -1115,18 +1117,19 @@ input {
   transition: 0.3s;
   color: #fff;
   background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  box-shadow: white;
   font-family: "Nunito", sans-serif;
 }
 .contactbtn .btn span {
+  vertical-align: center;
   font-weight: 600;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
 }
 .contactbtn .btn i {
-  margin-left: 0.3rem;
+vertical-align: center;
   font-size: 1.2rem;
-  transition: 0.3s;
+  transition: 1s;
 }
 .contactbtn .btn:hover {
   background: #00aced;
@@ -1227,6 +1230,8 @@ input {
   font-size: 1.5rem;
   animation: pound 0.35s infinite alternate;
 }
+
+
 @-webkit-keyframes pound {
   to {
     transform: scale(1.1);
