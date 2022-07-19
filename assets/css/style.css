@@ -331,7 +331,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: #e5ecfb;
+  background: linear-gradient(to bottom, white, #57059e);
 }
 .about .row {
   display: flex;
