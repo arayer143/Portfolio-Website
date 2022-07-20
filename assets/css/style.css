@@ -530,7 +530,7 @@ header .navbar ul li a:hover {
 	
 	.skillsgraph .chart{
 		position:relative;
-		display: block;
+		display: flex;
 		padding: 10px;
 		margin: 0 0 3px 0;
 		text-align: center;
