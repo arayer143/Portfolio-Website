@@ -331,7 +331,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: linear-gradient(to bottom, white, #57059e);
+  background: whitesmoke;
 }
 .about .row {
   display: flex;
@@ -462,11 +462,11 @@ header .navbar ul li a:hover {
   color: rgb(255, 230, 0);
 }
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
+  background: grey;
   color: #fff;
   border-radius: 1rem;
-  padding: 2rem;
-  width: 70%;
+  padding: 3rem;
+  width: 50%;
   margin: auto;
   margin-top: 2rem;
 }
@@ -474,19 +474,19 @@ header .navbar ul li a:hover {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   flex-wrap: wrap;
-  gap: 1.8rem;
+  gap: 1rem;
 }
 .skills .container .bar {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 22, 0.9);
+  box-shadow: 0 4px 10px whitesmoke;
+  background: lightgray;
   transition: 0.2s;
 }
 .skills .container .bar:hover {
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
+  background-color: whitesmoke;
 }
 .skills .container .bar .info {
   display: flex;
@@ -495,15 +495,17 @@ header .navbar ul li a:hover {
   gap: 1rem;
   margin-top: 1rem;
 }
-.skills .container .bar .info i {
-  font-size: 4rem;
-}
 .skills .container .bar .info span {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
+  color: #57059e;
 }
+
+
+
+
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
   .skills .container {
@@ -521,6 +523,9 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 }
+
+
+
 /* skills media queries ends*/
 
 .chart {
