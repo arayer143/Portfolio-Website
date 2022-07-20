@@ -511,60 +511,7 @@ header .navbar ul li a:hover {
 /* start of skills graph*/
 
 	
-	.skillsgraph{
-		width:400px;
-		margin:40px auto;
-		padding:20px;
-    border-radius: 1rem;
-    background: gray;
-		box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.5);
-		-moz-box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.5);
-		-webkit-box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.5);
-	}
-	
-	.skillsgraph h2{
-		text-align:center;
-		width:100%;
-		margin: 0 0 20px 0;
-	}	
-	
-	.skillsgraph .chart{
-		position:relative;
-		display: flex;
-		padding: 10px;
-		margin: 0 0 3px 0;
-		text-align: center;
-		position: relative;
-		border: 4px double rgba(0,0,0,0.1);
-		background:rgba(255,255,255,0.5);
-	}
-		
 
-	
-	.skillsgraph .chart span{
-		position: absolute;
-		left: 0;
-		top:0;
-		background: whitesmoke;
-		z-index:0;
-		height:100%;
-		width:0px;
-		-webkit-transition: all ease-in-out 1s;
-		-moz-transition: all ease-in-out 2s;
-		-ms-transition: all ease-in-out 3s;
-		-o-transition: all ease-in-out 4s;
-		transition: all ease-in-out 5s;
-	}
-
-	.skillsgraph .chart p{
-		position: relative;
-		z-index: 100;
-		margin: 0;
-    font-family: "Poppins";
-		color: #57059e;;
-		font-size: 2em;
-		line-height:1.5 rem;
-	}
 
   /* end skills graph*/
 
@@ -586,16 +533,6 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 
-  .skills .skillsgraph{
-    padding: 0;
-    margin: 0;
-    vertical-align: center;
-  }
-  .skills .skillsgraph .chart{
-    padding: 0;
-    margin: 0;
-    vertical-align: center;
-  }
 
 }
 /*skills media queries end*/
