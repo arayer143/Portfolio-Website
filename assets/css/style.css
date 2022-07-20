@@ -583,7 +583,7 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 
-  .skillsgraph{
+  .skillsgraph .chart{
     padding: 0;
     margin: 0;
   }
