@@ -63,6 +63,14 @@ $(document).ready(function () {
 
 });
 
+
+
+
+
+
+
+
+  
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
@@ -179,11 +187,8 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-// <!-- tilt js effect starts -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 15,
-});
-// <!-- tilt js effect ends -->
+
+
 
 
 
@@ -210,6 +215,8 @@ document.onkeydown = function (e) {
         return false;
     }
 }
+
+
 
 
 
@@ -246,3 +253,37 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+
+/* ===== SCROLL REVEAL ANIMATION Ends ===== */
+
+
+
+
+
+
+/* Skills Graph starts */
+
+var gage = {
+    init: function(){
+        // restart used for demo purposes - change to $('.gage').each(function(i){
+      $('.chart span').css({"width" : "0"}).parent().each(function(i){
+        // Loop through .gage elements
+        $('p', this).html($(this).attr("data-label"));
+        // Set p html value to the data-label attr set in the element
+        var timeout = parseInt(i) * 60 + 1100;
+        // Set a timeout based on the iteration multiplied by 60 (will affect delay between animations) 
+        $('span', this).delay(timeout).animate({"opacity" : "1"}, 0, function(){
+          //Delay  
+          $(this).css({"width" : $(this).parent().attr("data-level") + "%"});
+        });
+      });
+    }
+  }
+  
+  $(document).ready(function(){
+    // Call gage init function
+    gage.init();
+  });
+  
+  /* Skills Graph ends */

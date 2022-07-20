@@ -506,6 +506,65 @@ header .navbar ul li a:hover {
 
 
 
+/* start of skills graph*/
+
+	
+	.skillsgraph{
+		width:400px;
+		margin:40px auto;
+		padding:20px;
+    background: gray;
+		box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.5);
+		-webkit-box-shadow: 0 3px 5px 2.5px rgba(0, 0, 0, 0.5);
+	}
+	
+	.skillsgraph h2{
+		text-align:center;
+		width:100%;
+		margin: 0 0 20px 0;
+	}	
+	
+	.skillsgraph .chart{
+		position:relative;
+		display: block;
+		padding: 10px;
+		margin: 0 0 3px 0;
+		text-align: center;
+		position: relative;
+		border: 4px double rgba(0,0,0,0.1);
+		background:rgba(255,255,255,0.5);
+	}
+		
+
+	
+	.skillsgraph .chart span{
+		position: absolute;
+		left: 0;
+		top:0;
+		background: whitesmoke;
+		z-index:0;
+		height:100%;
+		width:0px;
+		-webkit-transition: all ease-in-out 1s;
+		-moz-transition: all ease-in-out 1s;
+		-ms-transition: all ease-in-out 1s;
+		-o-transition: all ease-in-out 1s;
+		transition: all ease-in-out 1s;
+	}
+
+	.skillsgraph .chart p{
+		position: relative;
+		z-index: 100;
+		margin: 0;
+    font-family: "Poppins";
+		color: #57059e;;
+		font-size: 2em;
+		line-height:1.5 rem;
+	}
+
+  /* end skills graph*/
+
 
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
@@ -523,8 +582,57 @@ header .navbar ul li a:hover {
     margin-top: 5px;
     width: 100%;
   }
+
+  .skillsgraph{
+    padding: 0;
+    margin: 0;
+  }
 }
 /*skills media queries end*/
+
+
+body 
+{
+color: #16a085;
+font-family: 'Source Sans Pro',sans-serif;;
+}
+.mainpiechart {
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.piechart {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+.piechart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.piefooter {
+  background: #f3f3f3;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+
+.piefooter a {
+  color: #2c3e50;
+}
+
+
+
+
+
 
 
 /* skills section ends */
