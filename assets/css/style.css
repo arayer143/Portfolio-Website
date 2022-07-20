@@ -473,16 +473,16 @@ header .navbar ul li a:hover {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
 .skills .container .bar {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
   box-shadow: 0 4px 10px whitesmoke;
   background: lightgray;
-  align-items: auto;
+
  
 }
 
@@ -550,10 +550,10 @@ header .navbar ul li a:hover {
 		height:100%;
 		width:0px;
 		-webkit-transition: all ease-in-out 1s;
-		-moz-transition: all ease-in-out 1s;
-		-ms-transition: all ease-in-out 1s;
-		-o-transition: all ease-in-out 1s;
-		transition: all ease-in-out 1s;
+		-moz-transition: all ease-in-out 2s;
+		-ms-transition: all ease-in-out 3s;
+		-o-transition: all ease-in-out 4s;
+		transition: all ease-in-out 5s;
 	}
 
 	.skillsgraph .chart p{
