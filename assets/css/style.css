@@ -589,12 +589,12 @@ header .navbar ul li a:hover {
   .skills .skillsgraph{
     padding: 0;
     margin: 0;
-    vertical-align: auto;
+    vertical-align: center;
   }
   .skills .skillsgraph .chart{
     padding: 0;
     margin: 0;
-    vertical-align: auto;
+    vertical-align: center;
   }
 
 }
