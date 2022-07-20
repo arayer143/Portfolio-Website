@@ -591,6 +591,11 @@ header .navbar ul li a:hover {
     margin: 0;
     vertical-align: auto;
   }
+  .skills .skillsgraph .chart{
+    padding: 0;
+    margin: 0;
+    vertical-align: auto;
+  }
 
 }
 /*skills media queries end*/
