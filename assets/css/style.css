@@ -587,6 +587,8 @@ header .navbar ul li a:hover {
   }
 
   .skills .skillsgraph{
+    padding: 0;
+    margin: 0;
     vertical-align: auto;
   }
 
