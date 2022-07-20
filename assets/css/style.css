@@ -443,9 +443,7 @@ header .navbar ul li a:hover {
     gap: 0;
   }
 
-  .about .row .content.resumebtn{
-    vertical-align: middle;
-  }
+
 }
 /* about media queries ends*/
 /* about section ends */
