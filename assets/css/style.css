@@ -586,6 +586,10 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 
+  .skills .skillsgraph{
+    vertical-align: auto;
+  }
+
 }
 /*skills media queries end*/
 
