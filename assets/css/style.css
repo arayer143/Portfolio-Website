@@ -468,17 +468,16 @@ header .navbar ul li a:hover {
 .skills .container {
   background: grey;
   color: #fff;
-  vertical-align: center;
   border-radius: 1rem;
   padding: 3rem;
   width: 60%;
-  margin: auto;
   margin-top: 2rem;
 }
 .skills .container .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
+  
 }
 .skills .container .bar {
   margin-bottom: 15px;
