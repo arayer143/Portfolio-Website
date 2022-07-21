@@ -126,7 +126,7 @@ header .navbar ul li a:hover {
 }
 @media (max-width: 768px) {
   #menu {
-    display: block;
+    display: left;
   }
 
   header .navbar {
