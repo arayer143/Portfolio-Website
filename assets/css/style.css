@@ -120,7 +120,7 @@ header .navbar ul li a:hover {
 /* hamburger icon starts*/
 .hamburger-menu {
   z-index:2;
-	position: absolute;
+	position: flex;
   top: 1px;
   right: 10px;
   width: 100px;
@@ -131,14 +131,14 @@ header .navbar ul li a:hover {
 .bar,
 .bar:after,
 .bar:before {
-  width: 70px;
+  width: 60px;
 	height: 10px;
 }
 
 .bar {
 	position: absolute;
 	transform: translateY(25px);
-	background: rgba(255, 255, 255, 1);
+	background: rgb(255, 230, 0);
 	transition: all 0ms 300ms;
 }
 
@@ -179,7 +179,7 @@ header .navbar ul li a:hover {
 /*nav menu*/
 .show {
   left:0%;
-  opacity:1;
+  opacity:2;
 }
 
 .hide {
