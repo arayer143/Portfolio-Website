@@ -510,7 +510,7 @@ header .navbar ul li a:hover {
   margin-top: 3rem;
  justify-content: center;
  align-items: center;
- flex-direction: column;
+ flex-direction: com;
 }
 .skills .skillscontainer .skillsrow {
   display: grid;
@@ -561,17 +561,17 @@ header .navbar ul li a:hover {
 
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
-  .skills .container {
+  .skills .skillscontainer {
     padding: 0;
     margin: 0;
   }
-  .skills .container .row {
+  .skills .skillscontainer .skillsrow {
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
   }
-  .skills .container {
+  .skills .skillscontainer {
     margin-top: 5px;
     width: 100%;
   }
