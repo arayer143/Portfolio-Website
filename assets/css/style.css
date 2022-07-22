@@ -501,45 +501,49 @@ header .navbar ul li a:hover {
 .skills .heading span {
   color: rgb(255, 230, 0);
 }
-.skills .container {
+.skills .skillscontainer {
   background: grey;
   color: #fff;
   border-radius: 1rem;
   padding: 3rem;
   width: 60%;
-  margin-top: 2rem;
+  margin-top: 3rem;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
-.skills .container .skillsrow {
+.skills .skillscontainer .skillsrow {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   
 }
-.skills .container .skillsbar {
+.skills .skillscontainer .skillsbar {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
   box-shadow: 0 4px 10px whitesmoke;
   background: lightgray;
+  
 
  
 }
 
-.skills .container .skillsbar .info {
+.skills .skillscontainer .skillsbar .skillsinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
-.skills .container .skillsbar .info span {
+.skills .skillscontainer .skillsbar .skillsinfo span {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
   color: #57059e;
 }
-.skills .container .skillsbar:hover {
+.skills .skillscontainer .skillsbar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
   background-color: whitesmoke;
 
