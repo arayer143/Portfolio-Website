@@ -391,6 +391,7 @@ header .navbar ul li a:hover {
   padding: 3rem;
   width: 60%;
   margin-top: 3rem;
+  align-items: center;
 
 }
 .skills .container .row {
