@@ -1,9 +1,12 @@
 $(document).ready(function () {
 
-    $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-click');
-    });
+    (function () {
+        $('.hamburger-menu').on('click', function() {
+            $('.bar').toggleClass('animate');
+        var mobileNav = $('.mobile-nav');
+        mobileNav.toggleClass('hide show');
+        })
+    })();
 
     $(window).on('load', function () {
         $('#menu').removeClass('fa-times');
