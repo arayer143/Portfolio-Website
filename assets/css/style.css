@@ -509,7 +509,7 @@ header .navbar ul li a:hover {
   width: 60%;
   margin-top: 2rem;
 }
-.skills .container .row {
+.skills .container .skillsrow {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
