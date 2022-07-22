@@ -384,7 +384,7 @@ header .navbar ul li a:hover {
 .skills .heading span {
   color: rgb(255, 230, 0);
 }
-.skills .skillscontainer {
+.skills .container {
   background: grey;
   color: #fff;
   border-radius: 1rem;
@@ -395,13 +395,13 @@ header .navbar ul li a:hover {
  align-items: center;
  flex-direction: com;
 }
-.skills .skillscontainer .skillsrow {
+.skills .container .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   
 }
-.skills .skillscontainer .skillsbar {
+.skills .container .bar {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
@@ -412,21 +412,21 @@ header .navbar ul li a:hover {
  
 }
 
-.skills .skillscontainer .skillsbar .skillsinfo {
+.skills .container .bar .info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
-.skills .skillscontainer .skillsbar .skillsinfo span {
+.skills .container .bar .info span {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
   color: #57059e;
 }
-.skills .skillscontainer .skillsbar:hover {
+.skills .container .bar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
   background-color: whitesmoke;
 
