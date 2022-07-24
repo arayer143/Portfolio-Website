@@ -308,11 +308,15 @@ header .navbar ul li a:hover {
 }
 .resumebtn {
   margin-top: 6rem;
-  vertical-align: middle;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .resumebtn .btn {
   padding: 1.7rem 3rem;
- 
+
+
   border-radius: 0.5em;
   transition: 0.3s;
   color: #fff;
