@@ -53,7 +53,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2;
+  text-align: center;
   padding: 1.7rem 10%;
   height: 6.5rem;
   background-color: white;
@@ -76,6 +77,7 @@ section {
 header .navbar ul {
   list-style: none;
   display: flex;
+  
 
 }
 header .navbar li {
