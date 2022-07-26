@@ -229,14 +229,7 @@ srtop.reveal('.contact .container .form-group', { delay: 400 });
 
 
 
-
-
-
-/* Skills Graph starts */
-
-
-  
-  /* Skills Graph ends */
+/*Navbar Script Starts */
 
   function test(){
 	var tabsNewAnim = $('#navbarSupportedContent');
