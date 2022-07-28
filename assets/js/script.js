@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
-    (function () {
-        $('.hamburger-menu').on('click', function() {
-            $('.bar').toggleClass('animate');
-        var mobileNav = $('.mobile-nav');
-        mobileNav.toggleClass('hide show');
-        })
-    })();
+    $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+    
+    });
 
     $(window).on('load', function () {
         $('#menu').removeClass('fa-times');
@@ -51,18 +51,7 @@ $(document).ready(function () {
 
 
 
-  
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Alex Rayer";
-            $("#favicon").attr("href", "assets/images/favicon.png");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
-        }
-    });
+
 
 
 
@@ -228,14 +217,3 @@ srtop.reveal('.contact .container .form-group', { delay: 400 });
 /* ===== SCROLL REVEAL ANIMATION Ends ===== */
 
 
-
-/*Navbar Script Starts */
-
- 
-$('.navTrigger').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
-
-});
