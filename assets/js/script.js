@@ -1,22 +1,5 @@
 $(document).ready(function () {
-
-    $('.navTrigger').click(function () {
-        $(this).toggleClass('active');
-        console.log("Clicked menu");
-        $("#mainListDiv").toggleClass("show_list");
-        $("#mainListDiv").fadeIn();
     
-    });
-
-    $(window).on('load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
-
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
-        } else {
-            document.querySelector('#scroll-top').classList.remove('active');
-        }
 
         // scroll spy
         $('section').each(function () {
@@ -30,7 +13,7 @@ $(document).ready(function () {
                 $('.navbar').find(`[href="#${id}"]`).addClass('active');
             }
         });
-    });
+   
 
     // smooth scrolling
     $('a[href*="#"]').on('click', function (e) {
@@ -48,12 +31,28 @@ $(document).ready(function () {
 
 
 
+//Navbar Click and scroll Function starts
+
+$('.mainListDiv').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
 
 
 
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
 
-
-
+//Navbar ends 
 
 
 
