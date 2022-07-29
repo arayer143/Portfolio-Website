@@ -76,6 +76,7 @@ html::-webkit-scrollbar-thumb {
 .nav div.main_list {
   height: 65px;
   float: right;
+  margin: auto;
 }
 
 .nav div.main_list ul {
@@ -363,6 +364,8 @@ html::-webkit-scrollbar-thumb {
 .affix {
   padding: 0;
   background-color: #111;
+  position: fixed;
+  z-index: 100;
 }
 
 
