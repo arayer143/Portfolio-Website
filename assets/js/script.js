@@ -33,14 +33,15 @@ $(document).ready(function () {
 
 //Navbar Click and scroll Function starts
 
-$('.mainListDiv').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
-
-});
-
+$(document).ready(function(){
+    $('.navTrigger').on('click',function (){
+      $(this).toggleClass('active');
+      console.log("Clicked menu");
+      $("#mainListDiv").toggleClass("show_list");
+      $("#mainListDiv").fadeIn();
+  
+    });
+  });
 
 
     $(window).scroll(function() {
