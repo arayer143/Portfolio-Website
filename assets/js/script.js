@@ -1,3 +1,21 @@
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if (this.scrollY > 20) {
+            $(".navbar").addClass("sticky");
+        } else {
+            $(".navbar").removeClass("sticky");
+        }
+    });
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+
+});
+
+
 $(document).ready(function () {
     
 
@@ -33,25 +51,6 @@ $(document).ready(function () {
 
 //Navbar Click and scroll Function starts
 
-$(document).ready(function(){
-    $('.navTrigger').on('click',function (){
-      $(this).toggleClass('active');
-      console.log("Clicked menu");
-      $("#mainListDiv").toggleClass("show_list");
-      $("#mainListDiv").fadeIn();
-  
-    });
-  });
-
-
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
 
 //Navbar ends 
 

@@ -48,214 +48,94 @@ html::-webkit-scrollbar-thumb {
 
 
 /* navbar starts */
-.nav {
-  width: 100%;
-  height: 65px;
+.navbar {
   position: fixed;
-  line-height: 65px;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 30px 0;
+  box-shadow: 0px 10px 50px 5px #00000038;
+}
+
+.navbar.sticky::before {
+  content: '';
+  background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+  position: absolute;
+  opacity: 1;
+  top: 10px;
+  left: -10px;
+  width: 105vw;
+  height:110%;
+  z-index: -1;
+  filter: blur(1.5px);
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu ul{
+  
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
   text-align: center;
 }
-
-.nav div.logo {
-  float: left;
-  width: auto;
-  height: auto;
-  padding-left: 3rem;
-}
-
-.nav div.logo a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-  color: #00E676;
-}
-
-.nav div.main_list {
-  height: 65px;
-  float: right;
-  margin: auto;
-}
-
-.nav div.main_list ul {
-  width: 100%;
-  height: 65px;
-  display: flex;
+.navbar .menu li {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: inline-block;
 }
 
-.nav div.main_list ul li {
-  width: auto;
-  height: 65px;
-  padding: 0;
-  padding-right: 3rem;
-}
+.navbar .menu li a {
 
-.nav div.main_list ul li a {
-  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s;
   color: #fff;
-  line-height: 65px;
-  font-size: 2.4rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
 }
 
-.nav div.main_list ul li a:hover {
-  color: #00E676;
-}
-
-.navTrigger {
-  display: none;
-}
-
-.nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-
-/* Media qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-      margin: 0;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .navTrigger {
-      display: block;
-  }
-  .nav div.logo {
-      margin-left: 15px;
-  }
-  .nav div.main_list {
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-  }
-  .nav div.show_list {
-      height: auto;
-      display: none;
-  }
-  .nav div.main_list ul {
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-color: #111;
-      /*same background color of navbar*/
-      background-position: center top;
-  }
-  .nav div.main_list ul li {
-      width: 100%;
-      text-align: right;
-  }
-  .nav div.main_list ul li a {
-      text-align: center;
-      width: 100%;
-      font-size: 3rem;
-      padding: 20px;
-  }
-  .nav div.media_button {
-      display: block;
-  }
-}
-
-
-/* Nav Animation */
-
-
-.navTrigger {
-  cursor: pointer;
-  width: 30px;
-  height: 25px;
-  margin: auto;
-  position: absolute;
-  right: 30px;
-  top: 0;
+.navbar .menu a:after {    
+  background: none repeat scroll 0 0 transparent;
   bottom: 0;
-}
-
-.navTrigger i {
-  background-color: #fff;
-  border-radius: 2px;
-  content: '';
+  content: "";
   display: block;
-  width: 100%;
-  height: 4px;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar .menu a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.navbar .menu li a:hover {
+  color: #23b410;
 }
 
-.navTrigger i:nth-child(1) {
-  -webkit-animation: outT 0.8s backwards;
-  animation: outT 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
+.navbar.sticky .menu li a:hover {
+  color: white;
 }
 
-.navTrigger i:nth-child(2) {
-  margin: 5px 0;
-  -webkit-animation: outM 0.8s backwards;
-  animation: outM 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-  -webkit-animation: outBtm 0.8s backwards;
-  animation: outBtm 0.8s backwards;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-  -webkit-animation: inT 0.8s forwards;
-  animation: inT 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(2) {
-  -webkit-animation: inM 0.8s forwards;
-  animation: inM 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(3) {
-  -webkit-animation: inBtm 0.8s forwards;
-  animation: inBtm 0.8s forwards;
-}
-
-
-.affix {
-  padding: 0;
-  background-color: #111;
-  position: fixed;
-  z-index: 100;
-}
-
-
-
-
-
-
-.myH2 {
-text-align:center;
-font-size: 4rem;
-}
-.myP {
-text-align: justify;
-padding-left:15%;
-padding-right:15%;
-font-size: 20px;
-}
-@media all and (max-width:700px){
-.myP {
-  padding:2%;
-}
+.menu-btn{
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
 }
 /* navbar ends */
 
@@ -1017,251 +897,173 @@ display: flex;
 
 
 
-/* contact section starts */
+/*.MYSQL section starts */
 
-.contact{
+.MYSQL{
   background: linear-gradient(to bottom, #57059e, #00002c);
 }
 
-.contact h2 {
+.MYSQL h2 {
   color: #fff;
   font-size: 3rem;
   font-weight: 600;
   padding-top: 4rem;
   text-align: center;
 }
-.contact .heading span {
+.MYSQL .heading span {
   color: rgb(255, 230, 0);
 }
-.contact .button-area {
+.MYSQL .button-area {
   margin-top: 6rem;
   margin-bottom: 6rem;
   
 }
 
-.contactbtn {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-  box-shadow: whitesmoke;
-  outline: #00aced;
-}
-.contactbtn .btn {
-  padding: 1.7rem 3rem;
-  border-radius: 0.5em;
-  transition: 0.3s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: white;
-  font-family: "Nunito", sans-serif;
-  margin-bottom: 3rem;
-}
-.contactbtn .btn span {
-  vertical-align: center;
-  font-weight: 600;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-}
-.contactbtn .btn i {
-vertical-align: center;
-  font-size: 1.2rem;
-  transition: 1s;
-}
-.contactbtn .btn:hover {
-  background: #00aced;
-
-}
-.contactbtn .btn:hover i {
-  transform: translateX(5px);
-}
 
 
-
-
-
-
-
-
-/* contact section ends */
+/*.MYSQL section ends */
 
 /* footer section starts */
-ul {
-  margin: 0px;
-  padding: 0px;
+.contact{
+  background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
+  background-size: 2000px;
 }
-.footer-section {
-background: #151414;
-position: relative;
+.contact .title::after{
+   content: "Get in touch";
 }
-.footer-cta {
-border-bottom: 1px solid #373636;
+
+.contact .contact-content .column{
+   width: calc(50% - 30px);
 }
-.single-cta i {
-color: #ff5e14;
-font-size: 30px;
-float: left;
-margin-top: 8px;
+.contact .contact-content .text{
+   color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;  
 }
-.cta-text {
-padding-left: 15px;
-display: inline-block;
+.contact .contact-content .left p{
+   text-align: justify;
 }
-.cta-text h4 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 2px;
+.contact .contact-content .left .paragraph-3{
+   font-size: 18px;
+   color: white;
 }
-.cta-text span {
-color: #757575;
-font-size: 15px;
+.contact .contact-content .left .icons{
+   margin: 10px 0;
 }
-.footer-content {
-position: relative;
-z-index: 2;
+.contact .contact-content .row{
+   display: flex;
+   height: 65px;
+   align-items: center;
 }
-.footer-pattern img {
-position: absolute;
-top: 0;
-left: 0;
-height: 330px;
-background-size: cover;
-background-position: 100% 100%;
+.contact .contact-content .row .info{
+   margin-left: 30px;
 }
-.footer-logo {
-margin-bottom: 30px;
+.contact .contact-content .row i{
+   font-size: 25px;
+   color: #23b410;
 }
-.footer-logo img {
-  max-width: 200px;
+.contact .contact-content .info .head{
+   color: white;
+   font-weight: 500;
 }
-.footer-text p {
-margin-bottom: 14px;
-font-size: 14px;
-    color: #7e7e7e;
-line-height: 28px;
+.contact .contact-content .info .sub-title{
+  color: white;
 }
-.footer-social-icon span {
-color: #fff;
-display: block;
-font-size: 20px;
-font-weight: 700;
-font-family: 'Poppins', sans-serif;
-margin-bottom: 20px;
+.contact .right form .fields{
+ display: flex;
 }
-.footer-social-icon a {
-color: #fff;
-font-size: 16px;
-margin-right: 15px;
+.contact .right form .field,.contact .right form .fields .field{
+ height: 45px;
+ width: 100%;
+ margin-bottom: 15px;
 }
-.footer-social-icon i {
-height: 40px;
-width: 40px;
-text-align: center;
-line-height: 38px;
-border-radius: 50%;
+
+.contact .right form .textarea{
+ height: 80px;
+ width: 100%;
+
 }
-.facebook-bg{
-background: #3B5998;
+.contact .right form .name{
+  margin-right: 10px;
 }
-.twitter-bg{
-background: #55ACEE;
+
+.contact .right form .email{
+  margin-left: 10px;
 }
-.google-bg{
-background: #DD4B39;
+
+.contact .right form .field input,.contact .right form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border:2px solid #23b410;
+  color: white;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  background: none;
+  font-family: 'Poppins', sans-serif;
 }
-.footer-widget-heading h3 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 40px;
-position: relative;
+.contact .right form .textarea textarea{
+   padding-top: 10px;
+   resize: none;
 }
-.footer-widget-heading h3::before {
-content: "";
-position: absolute;
-left: 0;
-bottom: -15px;
-height: 2px;
-width: 50px;
-background: #ff5e14;
+.contact .right form .button{
+  height: 47px;
+  width: 170px;
 }
-.footer-widget ul li {
-display: inline-block;
-float: left;
-width: 50%;
-margin-bottom: 12px;
+
+.contact .right form .button button{
+  width: 100%;
+  height: 100%;
+  border: 0.1px solid #23b410;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
-.footer-widget ul li a:hover{
-color: #ff5e14;
+.contact .right form .button button:hover{
+  background: none;
+  color: #23b410;
 }
-.footer-widget ul li a {
-color: #878787;
-text-transform: capitalize;
+
+/* footer styling */
+footer{
+  background: url("images/dark-green-leaves-background-hydrangea-260nw-1699508995.jpg") ;
+  padding: 20px 23px;
+  color: white;
 }
-.subscribe-form {
-position: relative;
-overflow: hidden;
+
+footer .text-center {
+  text-align: center !important; }
+
+footer span a{
+  color: #23b410;
+  transition: color 0.3s ease;
 }
-.subscribe-form input {
-width: 100%;
-padding: 14px 28px;
-background: #2E2E2E;
-border: 1px solid #2E2E2E;
-color: #fff;
+footer i{
+  padding-left: 10px;
+  font-size: 25px;;
+  color: #23b410;
+  transition: color 0.3s ease;
 }
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #ff5e14;
-  padding: 13px 20px;
-  border: 1px solid #ff5e14;
-  top: 0;
+footer span a:hover{
+  color: white;
 }
-.subscribe-form button i {
-color: #fff;
-font-size: 22px;
-transform: rotate(-6deg);
+footer i{
+  font-size: 27px;
 }
-.copyright-area{
-background: #202020;
-padding: 25px 0;
-}
-.copyright-text p {
-margin: 0;
-font-size: 14px;
-color: #878787;
-}
-.copyright-text p a{
-color: #ff5e14;
-}
-.footer-menu li {
-display: inline-block;
-margin-left: 20px;
-}
-.footer-menu li:hover a{
-color: #ff5e14;
-}
-.footer-menu li a {
-font-size: 14px;
-color: #878787;
+footer i:hover{
+  color: white;
 }
 
 
 
 
 
-/* common media queries starts*/
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding-right: 0;
-  }
-  section {
-    padding: 2rem;
-  }
-}
-/* common media queries ends*/
+
 
 
 
@@ -1284,3 +1086,69 @@ color: #878787;
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+
+
+
+
+
+/* common media queries starts*/
+/* response media query starts */
+@media (max-width: 1300px) {
+  .home .max-width{
+      margin-left: 0px;
+  }
+}
+@media (max-width: 1104px) {
+   .about .about-content .left img{
+       height: 350px;
+       width: 350px;
+   }
+}
+@media (max-width: 991px) {
+   .max-width{
+       padding: 0 50px;
+   }
+}
+@media (max-width: 947px) {
+   
+   .max-width{
+       padding: 0 50px;
+   }
+   .menu-btn{
+      display: block;
+      z-index: 999;
+   }
+   .menu-btn i.active {
+       visibility: hidden;
+   }
+   .menu-btn i.active::before {
+       visibility: visible;
+       position: absolute;
+       content: "\e5cd";
+   }
+   .navbar .menu{
+       position: fixed;
+       height: 100vh;
+       width: 100%;
+       left:-100%;
+       top: 0;
+       background: black;
+       text-align: center;
+       padding-top: 80px;
+       transition: all 0.3s ease;
+   }
+
+   .navbar .menu.active{
+       left: 0;
+   }
+   .navbar .menu li{
+       display: block;
+   }
+   .navbar .menu li a{
+       display: inline-block;
+       margin: 20px 0;
+       font-size: 25px;
+   }
+
+/* common media queries ends*/
