@@ -948,35 +948,14 @@ display: flex;
   background: #e5ecfb;
   min-height: 60vh;
 }
-.contact .container {
-  max-width: 1050px;
-  width: 100%;
-  background: #fff;
-  border-radius: 1.5rem;
-  margin: 2rem 5rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
-.contact .container .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2.5rem 2rem;
-}
-.contact .content .image-box {
-  max-width: 60%;
-  margin-left: 4rem;
-}
-.contact .content .image-box img {
-  width: 100%;
-  height: 40rem;
-  position: relative;
-}
+
+
 .contact .content form {
-  width: 45%;
+  width:10%;
   margin-right: 3.5rem;
 }
 form .form-group {
-  display: flex;
+  display: fixed;
   flex-direction: column;
   justify-content: center;
 }
