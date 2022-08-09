@@ -476,14 +476,14 @@ header .navbar ul li a:hover {
   padding: 3rem;
   width: 60%;
   margin-top: 3rem;
-  align-items: center;
+
 
 }
 .skills .container .row {
-  display: flex;
-  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
   gap: 1rem;
-  align-items: center;
+
   
 }
 .skills .container .bar {
@@ -492,7 +492,7 @@ header .navbar ul li a:hover {
   border-radius: 1rem;
   box-shadow: 0 4px 10px whitesmoke;
   background: lightgray;
-  align-items: column;
+
   
 
  
