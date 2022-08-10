@@ -1,10 +1,9 @@
 ## Portfolio-Website
-Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
+Portfolio website build using HTML5, CSS3, JavaScript.
 
-<<Still working on this, Not finished yet>>
 
 ### Extras : 
-Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome and JSON
+article.js, Typed.js, Scroll Reveal, Tawk.to.
 
 
 
