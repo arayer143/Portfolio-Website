@@ -6,6 +6,7 @@ $(document).ready(function () {
         $('.navbar').toggleClass('nav-toggle');
     });
 
+
     $(window).on('scroll load', function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
@@ -15,6 +16,7 @@ $(document).ready(function () {
         } else {
             document.querySelector('#scroll-top').classList.remove('active');
         }
+
 
         // scroll spy
         $('section').each(function () {
@@ -31,6 +33,7 @@ $(document).ready(function () {
     });
 
 
+
     // smooth scrolling
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
@@ -39,6 +42,7 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
+    
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
@@ -56,7 +60,13 @@ $(document).ready(function () {
     });
     // <!-- emailjs to mail contact form data -->
 
+
+
+
+
 });
+
+
 
 
 
@@ -71,10 +81,12 @@ var typed = new Typed(".typing-text", {
 });
 
 
-
-
-
 // <!-- typed js effect ends -->
+
+
+
+
+
 
 async function fetchData(type = "skills") {
     let response
