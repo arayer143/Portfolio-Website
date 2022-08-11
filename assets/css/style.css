@@ -1107,14 +1107,13 @@ form .button-area {
   text-align: center;
   border-radius: 5rem;
   font-size: 1.7rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   transition: 0.2s;
   background: rgb(230, 230, 230);
   color: #02094b;
   border: none;
 }
 .footer .box-container .box .share a:hover {
-  background: transparent;
   transform: scale(0.98);
   border: 0.1rem solid rgb(180, 178, 178);
   color: #ffae00;
