@@ -42,6 +42,9 @@ html::-webkit-scrollbar-thumb {
 
 
 
+
+
+
 /* navbar starts */
 header {
   position: fixed;
@@ -108,6 +111,10 @@ header .navbar ul li a:hover {
 /* navbar ends */
 
 
+
+
+
+
 /* hamburger icon starts*/
 #menu {
   font-size: 3rem;
@@ -165,6 +172,9 @@ header .navbar ul li a:hover {
 
 
 
+
+
+
 /* Home section starts*/
 .home {
   position: relative;
@@ -217,6 +227,9 @@ header .navbar ul li a:hover {
   font-weight: 600;
   padding: 0;
 }
+
+/* Home section ends*/
+
 
 
 
@@ -276,34 +289,16 @@ header .navbar ul li a:hover {
 .social-icons a.instagram:hover {
   background-color: #00aced;
 }
-/* social icons end */
+/* social icons ends */
 
 
 
 
 
 
-/* hero media queries starts*/
-@media (max-width: 450px) {
-  .home .btn {
-    margin: 4rem 0;
-  }
-  .socials {
-    margin-top: 12rem;
-  }
-  .home .image img {
-    margin-top: -12rem;
-  }
-  .home .homecontent p {
-    font-size: 2.2rem;
-  }
-  .home .homecontent p span {
-    font-size: 2.2rem;
-  }
-}
-/* hero media queries ends*/
 
-/* hero section end */
+
+
 
 
 
@@ -417,6 +412,8 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 
+/* about section ends */
+
 
 
 
@@ -444,7 +441,8 @@ header .navbar ul li a:hover {
 
 }
 /* about media queries ends*/
-/* about section ends */
+
+
 
 
 
@@ -518,14 +516,8 @@ header .navbar ul li a:hover {
 
 }
 
+/* skills section ends */
 
-
-/* start of skills graph*/
-
-	
-
-
-  /* end skills graph*/
 
 
 /* skills media queries starts*/
@@ -554,7 +546,7 @@ header .navbar ul li a:hover {
 
 
 
-/* skills section ends */
+
 
 
 
@@ -688,7 +680,14 @@ header .navbar ul li a:hover {
   }
 }
 /* education media queries ends*/
+
 /* education section ends */
+
+
+
+
+
+
 
 /* projects section starts */
 
@@ -817,21 +816,11 @@ display: flex;
 .projects .viewall .btn:hover i {
   transform: translateX(5px);
 }
-/* projects section ends */
 
 
 
 
-
-
-
-
-
-
-
-
-
-/* view all button */
+/* view all button in Projects section starts*/
 .morebtn {
   display: flex;
   justify-content: center;
@@ -865,6 +854,7 @@ display: flex;
   transform: translateX(5px);
 }
 
+/* view all button in Projects section ends*/
 
 
 
@@ -910,6 +900,8 @@ display: flex;
   }
 }
 /* experience media queries ends */
+
+
 /* experience section ends */
 
 
@@ -918,35 +910,7 @@ display: flex;
 
 
 
-
-
-/*.MYSQL section starts */
-
-.MYSQL{
-  background: linear-gradient(to bottom, #57059e, #00002c);
-}
-
-.MYSQL h2 {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 600;
-  padding-top: 4rem;
-  text-align: center;
-}
-.MYSQL .heading span {
-  color: rgb(255, 230, 0);
-}
-.MYSQL .button-area {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-  
-}
-
-
-
-/*.MYSQL section ends */
-
-/* footer section starts */
+/* contact section starts */
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
@@ -1060,6 +1024,8 @@ form .button-area {
 .button-area button:hover i {
   left: 8px;
 }
+
+
 /* contact section media queries starts */
 @media (max-width: 900px) {
   .contact {
@@ -1080,6 +1046,11 @@ form .button-area {
   }
 }
 /* contact section media queries ends */
+
+
+/* contact section ends */
+
+
 
 
 
@@ -1188,6 +1159,8 @@ form .button-area {
   }
 }
 /* footer section ends */
+
+
 
 /* common media queries starts*/
 @media (max-width: 450px) {
