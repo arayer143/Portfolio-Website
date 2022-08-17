@@ -13,8 +13,7 @@ Typed.js, Scroll Reveal, Tawk.to.
 
 If you want to contact me, you can reach me through below handles.
 
-https://www.linkedin.com/sharing/share-offsite/?url={https://www.linkedin.com/in/alex-rayer/}
-
+<a href=”https://www.linkedin.com/in/alex-rayer/"><img align=”left” src=”https://raw.githubusercontent.com/username/reponame/branch/foldername/icon.svg" alt=”icon | LinkedIn” width=”21px”/></a>
 
 
 
