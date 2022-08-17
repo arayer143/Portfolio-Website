@@ -13,8 +13,9 @@ Typed.js, Scroll Reveal, Tawk.to.
 
 If you want to contact me, you can reach me through below handles.
 
-&nbsp;&nbsp;<a href="https://www.linkedin.com/in/alex-rayer/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="30"></img></a>
-&nbsp;&nbsp;<a href="https://www.github.com/arayer143/"><img src="https://www.felberpr.com/wp-content/uploads/github-logo.png" width="30"></img></a>
+<li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/alex-rayer/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/arayer143" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/Alex_Rayer_" target="_blank"><i class="fab fa-twitter"></i></a></li>
 
 
 
