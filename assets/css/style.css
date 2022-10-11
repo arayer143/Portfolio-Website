@@ -504,12 +504,12 @@ header .navbar ul li a:hover {
   align-items: center;
   margin: 1rem;
   padding: 2rem 0.2rem 2rem 0.2rem;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 1rem;
 }
 .skills .container .bar .info span {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 600;
   font-family: "Poppins";
   margin-left: 0.5rem;
   color: #57059e;
